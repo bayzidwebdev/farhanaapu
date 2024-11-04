@@ -1,0 +1,425 @@
+/*  */
+
+/*full body part css start here */
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins', sans-serif; 
+    font-size: 18px;
+    scroll-behavior: smooth;
+}
+body{
+    position: relative;
+}
+a,
+p,
+ul,
+li,
+h1, h2, h3, h4, h5,
+hr,
+ol{
+    margin: 0;
+    color: #fff !important;
+}
+a{
+    text-decoration: none;
+}
+li{
+    list-style: none;
+}
+/*full body part css end here   */
+.background{
+    z-index: -11;
+}
+.tr-p{
+    transition: 0.6s all ease;
+}
+.fs-18{
+    font-size: 18px;
+}
+.contact-button{
+    padding: 10px 20px;
+    border-radius: 50px;
+    background: #579cbc;
+    color: #fff;
+    font-weight: 500;
+    font-size: 20px;
+    transition: 0.6s all ease;
+}
+.contact-button:hover, .port-btn:hover{
+    background-color: #3A4B8A;
+}
+@keyframes bounce{
+    0% {
+        transform: translateY(0);
+    }
+    25% {
+        transform: translateY(-8px); /* Move up */
+    }
+    50% {
+        transform: translateY(0); /* Back to original position */
+    }
+    75% {
+        transform: translateY(-8px); /* Slightly up */
+    }
+    100% {
+        transform: translateY(0); /* Back to original position */
+    }
+}
+@keyframes width{
+    0% {
+        width: 0%;
+    }
+    100% {
+        width: 100%;
+    }
+}
+.title h4{
+    font-size: 28px;
+    font-weight: 700;
+    letter-spacing: 1px;
+}
+.ex-icon{
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    background: #19376d;
+    padding: 5px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: auto;
+    margin-bottom: 10px;
+    transition: 0.6s all ease-in-out;
+}
+.ex-icon img{
+    max-width: 60px;
+}
+.icon-item:hover .ex-icon{
+    background: none;
+}
+.icon-item:hover p{
+    letter-spacing: 2px;
+}
+.fs-14{
+    font-size: 14px !important;
+}
+
+
+
+
+/*header part css start here */
+header{
+    z-index: 99 !important;
+}
+.logo-img{
+    max-width: 40%;
+}
+.nav-link{
+    font-weight: 500;
+    font-size: 18px;
+    transition: 0.6s all ease;
+}
+.nav-link:hover{
+    letter-spacing: 2px;
+}
+.nav-item{
+    margin-left: 20px;
+}
+/*header part css end here   */
+
+
+/*banner part css start here */
+.banner{
+    margin: 60px 0;
+}
+.banner-left{
+    position: relative;
+    z-index: 99 !important;
+}
+.banner-left::before{
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 80vh;
+    border-radius: 50%;
+    background: #19376db3;
+    filter: blur(100px);
+    z-index: -1;
+    top: -200px;
+    left: -40px;
+}
+.ban-right-content{
+    width: 300px;
+    height: 300px;
+    border-radius: 50%;
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: auto;
+    animation: bounce 5s ease infinite;
+}
+.ban-right-content .your-pic{
+    min-width: 125%;
+}
+.ban-left-content h1{
+    font-size: 50px;
+    font-weight: 700px;
+}
+.ban-left-content p{
+    font-size: 14px;
+    margin-bottom: 40px;
+    font-weight: 400;
+}
+/*banner part css end here   */
+
+
+/*about part css start here */
+.about{
+    z-index: 11;
+}
+.about-bg{
+    background: #14141499;
+    border-radius: 10px;
+}
+.about-img img{
+    max-width: 80%;
+}
+.about-details p{
+    color: #cccccc !important;
+    font-size: 16px;
+}
+.about-item{
+    position: relative;
+    border-radius: 20px;
+    overflow:  hidden !important;
+}
+.meta-about p{
+    color: #fff !important;
+}
+.about-item::before{
+    content: "";
+    position: absolute;
+    background-image: linear-gradient(90deg,#a5d7e86b,#fff0);
+    width: 100%;
+    height: 100%;
+    border-radius: 20px;
+    width: 0;
+    transition: 0.4s all ease-in-out;
+}
+.about-item:hover::before{
+    animation: width 0.4s;
+    width: 100%;
+}
+/*about part css end here   */
+
+
+/*experience part css start here */
+.experience-icons{
+    display: flex;
+    width: 100%;
+    flex-wrap: wrap;
+}
+.icon-item{
+    width: 33.3%;
+    margin-bottom: 40px;
+}
+.icon-item p{
+    font-size: 18px;
+    font-weight: 500;
+    transition: 0.6s all ease-in-out;
+}
+.experience-icon img{
+    max-width: 100px;
+    padding: 10px;
+    margin-right: 10px;
+}
+.experience-details h5{
+    font-size: 16px;
+}
+.experience-details p{
+    color: #cccccc !important;
+    font-size: 12px;
+}
+.experience-item{
+    position: relative;
+    border-radius: 20px;
+    overflow:  hidden !important;
+    z-index: 999 ;
+}
+.experience-item::before{
+    content: "";
+    position: absolute;
+    background-image: linear-gradient(90deg,#a2b3fd69,#fff0);
+    width: 100%;
+    height: 100%;
+    border-radius: 20px;
+    z-index: -1;
+}
+.ex-list{
+    margin-top: 5px;
+}
+.ex-list li{
+    list-style: circle;
+}
+.ex-list li p{
+    font-size: 14px;
+}
+/*experience part css end here   */
+
+
+/*portfolio part css start here */
+.portfolio-card{
+    border-radius: 20px;
+}
+.port-img{
+    width: 100%;
+    height: 250px;
+    border-radius: 10px;
+    overflow: hidden;
+    position: relative;
+}
+.port-img::before{
+    content: '';
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(0deg,#000000,rgba(255, 255, 255, 0));
+    left: 0;
+    bottom: -100%;
+    position: absolute;
+    transition: 0.6s all ease-in-out;
+}
+.port-img:hover::before{
+    bottom: 0;
+}
+.port-img img{
+    width: 110%;
+    height: 100%;
+}
+.port-img:hover .portfolio-title{
+    bottom: 10px;
+}
+.portfolio-title{
+    bottom: -100%;
+    margin: 10px 0;
+    position: absolute;
+    transition: 0.6s all ease-in-out;
+    text-align: center;
+    width: 100%;
+}
+.portfolio-title a{
+    font-size: 20px;
+    font-weight: 500;
+}
+.portfolio-categories{
+    margin-bottom: 10px;
+}
+.portfolio-categories span{
+    display: inline-block;
+    padding: 5px 10px;
+    background: #ffffff3b;
+    border-radius: 50px;
+    font-size: 12px;
+    margin-right: 5px;
+    color: #fff;
+    font-weight: 500;
+    margin-bottom: 10px;
+}
+.port-btn{
+    padding: 10px 30px;
+    background: #4960b4;
+    border-radius: 50px;
+    font-size: 16px;
+    transition: 0.6s all ease;
+    margin-top: 10px;
+}
+/*portfolio part css end here   */
+
+
+/*contact part css start here */
+.contact{
+    background: #3A4B8A;
+    padding: 60px 0;
+}
+.contact-icons li a i{
+    margin-right: 15px;
+    font-size: 24px;
+}
+/*contact part css end here   */
+
+
+/*contact part css start here */
+footer{
+    background: #19376d;
+    padding: 40px 0;
+}
+/*contact part css start here */
+
+
+/* menu css  */
+.menu-icon{
+    display: none;
+    background: none;
+    outline: none;
+    color: #fff;
+    border: none;
+}
+.menu-icon i{
+    font-size: 22px;
+}
+.overlay{
+    position: absolute;
+    top: 0;
+    left: -120%;
+    transition: all 0.3s ease;
+    background-color: black;
+    width: 100vw;
+    height: 100vh;
+    z-index: 9999999999999999 !important;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.overlay.show-modal{
+    left: 0;
+    transition: all 0.3s ease;
+}
+.menu-close-btn{
+    position: absolute;
+    right: 30px;
+    top: 30px;
+    color: #fff;
+}
+.mobile-nav{
+    padding: 0 !important;
+    text-align: center;
+}
+.mobile-nav li{
+    margin: 10px 0;
+}
+
+
+/* bottom to top  */
+#scrollTopBtn {
+    position: fixed;
+    bottom: 20px;
+    right: -100px;
+    width: 40px;
+    height: 40px;
+    font-size: 24px;
+    background-color: #3A4B8A; /* Custom color */
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: all 0.6s ease-in-out;
+}
+#scrollTopBtn.top-btm-show {
+    right: 20px;
+    opacity: 1; /* Fade in */
+    transform: translateY(0); /* Slide up to the original position */
+}
+#scrollTopBtn:hover {
+    background-color: #4A5C9A; /* Slightly darker shade on hover */
+}
